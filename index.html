@@ -1,179 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rutuja Desai | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f9fc;
-      color: #333;
-      scroll-behavior: smooth;
-    }
-    header {
-      height: 100vh;
-      background: linear-gradient(135deg, #0078d7, #00c6ff);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      animation: slideUp 1.5s ease-out;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.7);
-      padding: 10px;
-      text-align: center;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00c6ff;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-    }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-    }
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      padding: 10px 20px;
-      border: 2px solid #0078d7;
-      border-radius: 8px;
-      color: #0078d7;
-      font-weight: bold;
-      transition: all 0.3s;
-    }
-    .contact a:hover {
-      background: #0078d7;
-      color: white;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @keyframes slideUp {
-      from {transform: translateY(30px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header>
-    <h1>Hi, I'm Rutuja Desai</h1>
-    <p>Java Developer | DevOps Engineer | Cloud Enthusiast</p>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <div style="text-align:center; margin-bottom:20px;">
-      <img src="20250916_152309(1).jpg" alt="Rutuja Desai" 
-           style="width:180px; height:180px; border-radius:50%; object-fit:cover; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
-    </div>
-    <p>
-      I’m a Java Spring Boot Developer & DevOps Engineer with 3+ years of experience 
-      in building scalable microservices, automating CI/CD pipelines, and migrating apps 
-      to cloud platforms. Currently working on production support & ServiceNow backend.
+<!-- ===== Hero Section ===== -->
+<section id="hero" style="display:flex; align-items:center; justify-content:center; min-height:80vh; padding:40px; background:#f5f5f5;">
+  <!-- Left: Text -->
+  <div style="flex:1; text-align:left; padding:20px;">
+    <h1 style="font-size:2.5rem; margin:0;">Rutuja Desai</h1>
+    <h2 style="font-size:1.2rem; color:#666; margin-top:10px;">Java Developer | DevOps Engineer | Cloud Enthusiast</h2>
+    <p style="margin-top:15px; max-width:500px;">
+      I build scalable Java Spring Boot microservices, manage CI/CD pipelines, and work with
+      cloud technologies like Azure, Kubernetes, and Docker. Passionate about solving problems
+      and delivering optimized solutions.
     </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">☕ Java / Spring Boot</div>
-      <div class="card">🐳 Docker / Kubernetes / OpenShift</div>
-      <div class="card">☁️ Azure / IBM Cloud</div>
-      <div class="card">⚡ GitLab CI/CD / Jenkins / Ansible</div>
-      <div class="card">🗄 PostgreSQL / MongoDB / Redis</div>
-      <div class="card">📊 Prometheus / Grafana / SonarQube</div>
-      <div class="card">🛠 ServiceNow Backend / Production Support</div>
+    <div style="margin-top:20px;">
+      <a href="www.linkedin.com/in/rutuja-desai-3b0754150" target="_blank" style="margin-left:15px; text-decoration:none; color:#0073e6;">LinkedIn</a>
+      <a href="mailto:rutujadesai1399@gmail.com" style="margin-left:15px; text-decoration:none; color:#0073e6;">Email</a>
     </div>
-  </section>
+  </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Microservices Banking App</h3>
-        <p>Built with Java, Spring Boot, Kafka, Redis, Docker. Reduced API latency by 25%.</p>
-      </div>
-      <div class="card">
-        <h3>CI/CD Pipeline Automation</h3>
-        <p>Automated builds & deployments with GitLab/Jenkins. Reduced errors by 40%.</p>
-      </div>
-      <div class="card">
-        <h3>Cloud Migration</h3>
-        <p>Migrated apps from PCF to OpenShift. Deployment time reduced by 30%.</p>
-      </div>
-      <div class="card">
-        <h3>Production Support (July 2025 – Present)</h3>
-        <p>ServiceNow backend, incident management, regression testing, RCA.</p>
-      </div>
+  <!-- Right: Image -->
+  <div style="flex:0.6; display:flex; justify-content:center; align-items:center; padding:20px;">
+    <img src="<!-- ===== Hero Section ===== -->
+<section id="hero" style="display:flex; align-items:center; justify-content:center; min-height:80vh; padding:40px; background:#f5f5f5;">
+  <!-- Left: Text -->
+  <div style="flex:1; text-align:left; padding:20px;">
+    <h1 style="font-size:2.5rem; margin:0;">Rutuja Desai</h1>
+    <h2 style="font-size:1.2rem; color:#666; margin-top:10px;">Java Developer | DevOps Engineer | Cloud Enthusiast</h2>
+    <p style="margin-top:15px; max-width:500px;">
+      I build scalable Java Spring Boot microservices, manage CI/CD pipelines, and work with
+      cloud technologies like Azure, Kubernetes, and Docker. Passionate about solving problems
+      and delivering optimized solutions.
+    </p>
+    <div style="margin-top:20px;">
+      <a href="https://yourusername.github.io" target="_blank" style="text-decoration:none; background:#0073e6; color:#fff; padding:10px 20px; border-radius:6px;">My Portfolio</a>
+      <a href="www.linkedin.com/in/rutuja-desai-3b0754150" target="_blank" style="margin-left:15px; text-decoration:none; color:#0073e6;">LinkedIn</a>
+      <a href="mailto:rutujadesai1399@gmail.com" style="margin-left:15px; text-decoration:none; color:#0073e6;">Email</a>
     </div>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact">
-      <a href="mailto:rutujadesai1399@gmail.com">📧 Email</a>
-      <a href="https://www.linkedin.com/in/rutuja-desai-3b0754150" target="_blank">🔗 LinkedIn</a>
-    </div>
-  </section>
-
-</body>
-</html>
-
+  <!-- Right: Image -->
+  <div style="flex:0.6; display:flex; justify-content:center; align-items:center; padding:20px;">
+    <img src="20250916_152309(1).jpg" alt="Rutuja Desai" 
+         style="width:220px; height:220px; border-radius:50%; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+  </div>
+</section>
+ alt="Rutuja Desai" 
+         style="width:220px; height:220px; border-radius:50%; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,0.3);">
+  </div>
+</section>
